@@ -1,0 +1,22 @@
+// color settings
+$black: #333;
+$dark-grey: #888;
+$grey: #BBB;
+$light-grey: #CCC;
+$yellow: #FFF143;
+
+// font-size settings
+$h2: 24px;
+$h3: 20px;
+$info: 14px;
+
+// hoever settings
+$hover: color 0.3s;
+
+// other settings
+@mixin section() {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    @content;
+}

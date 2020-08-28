@@ -1,0 +1,8 @@
+{
+  "navs": [ "Web Develop", "Growth Experience", "Job Experience", "Portfolio", "Contact Me" ],
+  "skills": [
+    [ "RWD architecture design", "RWD page development", "Web SEO Planning", "Web Api development" ], 
+    [ "Server development", "Server Api development", "Server setup" ], 
+    [ "Database design", "Database normalization", "Database setup & maintenance" ]
+  ]
+}

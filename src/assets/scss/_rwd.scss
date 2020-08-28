@@ -1,0 +1,30 @@
+$pc: 1200px;
+$wrapper: 1024px;
+$mobile: 768px;
+
+/**
+ * PC版本樣式
+ **/
+@mixin pc-ver() {
+    @media all and (min-width: $pc) {
+        @content;
+    }
+}
+
+/**
+ * PAD版本樣式
+ **/
+@mixin pad-ver() {
+    @media all and (min-width: $mobile) and (max-width: $pc) {
+        @content;
+    }
+}
+
+/**
+ * 手機版本樣式
+ **/
+@mixin mobile-ver() {
+    @media all and (max-width: $mobile) {
+        @content;
+    }
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "PressStart";
+    src: url("PressStart2P-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AuraSon";
+    src: url("AuraSon.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("Ubuntu-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
