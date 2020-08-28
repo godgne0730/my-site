@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header :class="{'show_header': this.topOffset > 0}">
         <wrapper>
             <!-- logo -->
             <web-logo :name="logo" />
@@ -8,7 +8,8 @@
                 <nav-option v-for="(item, index) in navs"
                     :key="'nav_'+index"
                     :name="item.name" 
-                    :id="item.id" />
+                    :id="item.id"
+                    :onActive="item.onActive" />
             </nav-bar>
             <!-- language option -->
             <lang-bar>
@@ -58,49 +59,80 @@ export default {
                     val: "en",
                     onActive: false
                 }
-            ]
+            ],
+            navs: [
+                {
+                    name: this.$t("navs[0]"/*網站開發*/),
+                    id: "#Skill_Page",
+                    onActive: false
+                },
+                {
+                    name: this.$t("navs[1]"/*作品展示*/),
+                    id: "#Portfolio_Page",
+                    onActive: false
+                },
+                // {
+                //     name: this.$t("navs[2]"/*個人經歷*/),
+                //     id: "",
+                //     onActive: false
+                // },
+                // {
+                //     name: this.$t("navs[3]"/*聯絡方式*/),
+                //     id: "",
+                //     onActive: false
+                // }
+            ],
+            topOffset: 0
         }
     },
     computed: {
-        navs: function() {
-            return [
-                {
-                    name: this.$t("navs[0]"/*關於自己*/),
-                    id: ""
-                },
-                {
-                    name: this.$t("navs[1]"/*成長經歷*/),
-                    id: ""
-                },
-                {
-                    name: this.$t("navs[2]"/*工作經歷*/),
-                    id: ""    
-                },
-                {
-                    name: this.$t("navs[3]"/*作品簡介*/),
-                    id: ""
-                },
-                {
-                    name: this.$t("navs[4]"/*聯絡方式*/),
-                    id: ""
-                }
-            ]
+        /**
+         * 導覽列多語言名稱
+         */
+        i18nNavs: function() {
+            return this.$t("navs");
         }
     },
     methods: {
         /**
-         * click options to change active language
-         * @param {String} val which language onclick 
+         * 導覽列名稱重置
+         */
+        initNav: function() {
+            for(let i = 0; i < this.navs.length; i ++) {
+                this.navs[i].name = this.i18nNavs[i];
+            }
+        },
+        /**
+         * 導覽列選項啟動狀況重置
+         */
+        initNavActive: function() {
+            for (let i = 0; i < this.navs.length; i++) {
+                this.navs[i].onActive = false;
+                if (this.topOffset - document.querySelector(`${this.navs[i].id}`).offsetTop >= -60) {
+                    this.navs[i].onActive = true;
+                }
+            }
+        },
+        /**
+         * 視窗偵測捲動畫面距離頂部距離
+         */
+        watchScroll: function() {
+            this.topOffset = document.documentElement.scrollTop || document.body.scrollTop;
+            this.initNavActive();
+        },
+        /**
+         * 點擊選項時，切換目前顯示語言
+         * @param {String} val 被點擊到的語言 
          */
         changeLang: function(val) {
             if (val !== null) {
-                this.$i18n.locale = val; // set new lang on i18n
-                window.localStorage.setItem("Wei's_language", val); // set webstorage
+                this.$i18n.locale = val; // 切換i18n至新語言
+                window.localStorage.setItem("Wei's_language", val); // 設定webstorage
                 for (let i = 0; i < this.langs.length; i ++) {
                     if (this.langs[i].val === val) this.langs[i].onActive = true;
                     else this.langs[i].onActive = false;
                 }
-            // init lang's status
+            // 初始化語言環境
             } else {
                 window.localStorage.setItem("Wei's_language", "tw");
                 this.$i18n.locale = "tw";
@@ -114,6 +146,20 @@ export default {
     },
     beforeMount() {
         this.changeLang(window.localStorage.getItem("Wei's_language"));
+    },
+    mounted() {
+        window.addEventListener("scroll", this.watchScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener("scroll", this.watchScroll);
+    },
+    watch: {
+        /**
+         * 當多語言環境變環時
+         */
+        "$i18n.locale"() {
+            this.initNav();
+        }
     }
 }
 </script>
@@ -123,5 +169,14 @@ export default {
     header {
         display: block;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: -100px;
+        transition: top 0.3s;
+        z-index: 99;
+    }
+    header.show_header {
+        top: 0;
+        transition: top 0.3s;
     }
 </style>

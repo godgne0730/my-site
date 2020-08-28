@@ -23,9 +23,11 @@ export default {
 	#web {
 		display: block;
 		width: 100%;
-		overflow: hidden;
-		font-family: Ubuntu;
+		background-color: #000;
 		color: $black;
+		font-family: Ubuntu;
+		overflow: hidden;
+		position: relative;
 		* {
 			box-sizing: border-box;
 		}

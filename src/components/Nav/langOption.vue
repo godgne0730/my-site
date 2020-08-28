@@ -40,15 +40,21 @@ export default {
     @import "../../assets/scss/_rwd.scss";
     .lang_option {
         display: inline-block;
-        color: $grey;
+        color: $dark-grey;
         cursor: pointer;
         font-size: 12px;
         padding: 5px 12px;
         vertical-align: middle;
+        transition: $hover;
     }
 
     // 啟動中語言的樣式
     .lang_option.active {
-        color: $black;
+        color: #FFF;
+    }
+
+    .lang_option:hover {
+        color: $light-yellow;
+        transition: $hover;
     }
 </style>

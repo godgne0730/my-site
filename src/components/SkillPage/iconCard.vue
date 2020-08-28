@@ -60,6 +60,7 @@ export default {
                 li {
                     display: block;
                     width: 100%;
+                    color: $grey;
                     font-size: $info;
                     text-align: left;
                     line-height: 20px;
@@ -72,7 +73,7 @@ export default {
                     width: 5px;
                     height: 5px;
                     border-radius: 100%;
-                    background-color: $yellow;
+                    background-color: $light-yellow;
                     position: absolute;
                     top: 0;
                     bottom: 0;

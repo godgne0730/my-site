@@ -79,16 +79,16 @@ export default {
                                 src: require("../../assets/image/icons/icon_js.png")
                             },
                             {
+                                name: "Vue.js",
+                                src: require("../../assets/image/icons/icon_vue.png")
+                            },
+                            {
                                 name: "jQuery",
                                 src: require("../../assets/image/icons/icon_jquery.png")
                             },
                             {
                                 name: "SASS",
                                 src: require("../../assets/image/icons/icon_sass.png")
-                            },
-                            {
-                                name: "Vue.js",
-                                src: require("../../assets/image/icons/icon_vue.png")
                             },
                             {
                                 name: "Webpack",
@@ -116,12 +116,12 @@ export default {
                                 src: require("../../assets/image/icons/icon_php.png")
                             },
                             {
-                                name: "CentOS",
-                                src: require("../../assets/image/icons/icon_centOS.png")
-                            },
-                            {
                                 name: "PM2",
                                 src: require("../../assets/image/icons/icon_pm2.png")
+                            },
+                            {
+                                name: "CentOS",
+                                src: require("../../assets/image/icons/icon_centOS.png")
                             }
                         ]
                     },

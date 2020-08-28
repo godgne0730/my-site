@@ -9,7 +9,7 @@
         </vue-typed-js>
         <font-awesome-icon class="icon_arrow" 
             :icon="arrow"
-            @click="scrollDown" />
+            v-scroll-to="nextSection" />
         <vue-particles 
             color="#DDD"
             :particleOpacity="0.3"
@@ -24,12 +24,8 @@ export default {
     data() {
         return {
             words: [ "HELLO WORLD!" ],
-            arrow: "chevron-down"
-        }
-    },
-    methods: {
-        scrollDown: function() {
-            this.$emit("scrollDown");
+            arrow: "chevron-down",
+            nextSection: "#Skill_Page"
         }
     }
 }
@@ -47,7 +43,7 @@ export default {
         .typed-element {
             display: block;
             width: 100%;
-            color: $dark-grey;
+            color: #FFF;
             font-family: PressStart;
             font-size: 50px !important;
             line-height: 100px;
@@ -61,7 +57,7 @@ export default {
             display: block;
             width: 30px;
             height: 30px;
-            color: $dark-grey;
+            color: #FFF;
             cursor: pointer;
             position: absolute;
             left: 0;

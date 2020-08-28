@@ -30,6 +30,7 @@ export default {
         .sub_title {
             display: block;
             width: 100%;
+            color: #FFF;
             font-size: $h2;
             text-align: center;
             margin: 10px 0 30px;

@@ -5,11 +5,11 @@
         </div>
         <div class="info_article" :class="articlePosition">
             <h3>{{ infoTitle }}</h3>
-            <ul v-for="(item, index) in articles"
-                :key="'articles_'+index">
-                <li>{{ item }}</li>
+            <ul>
+                <li v-for="(item, index) in articles"
+                :key="'articles_'+index">{{ item }}</li>
             </ul>
-            <div class="info_icon">
+            <div class="info_list">
                 <div class="info_icons" v-for="(item, index) in icons"
                     :key="'icons_'+index">
                     <img :src="item.src" :alt="item.name">
@@ -66,7 +66,7 @@ export default {
     .info_block {
         display: block;
         width: 100%;
-        margin: 40px 0 20px;
+        margin: 30px 0;
         .info_word {
             display: inline-block;
             width: 30%;
@@ -75,7 +75,7 @@ export default {
             span {
                 display: block;
                 width: 60%;
-                border-bottom: 5px solid $yellow;
+                border-bottom: 5px solid $light-yellow;
                 color: $grey;
                 font-size: 120px;
                 font-weight: bolder;
@@ -92,6 +92,7 @@ export default {
                 display: block;
                 width: 100%;
                 font-size: $h3;
+                color: $yellow;
                 margin: 0 0 10px;
             }
             ul {
@@ -100,6 +101,7 @@ export default {
                 li {
                     display: block;
                     width: 100%;
+                    color: $grey;
                     font-size: $info;
                     text-align: left;
                     line-height: 20px;
@@ -113,7 +115,7 @@ export default {
                     width: 5px;
                     height: 5px;
                     border-radius: 100%;
-                    background-color: $yellow;
+                    background-color: $light-yellow;
                     position: absolute;
                     top: 0;
                     bottom: 0;
@@ -121,12 +123,12 @@ export default {
                     margin: auto;
                 }
             }
-            .info_icon {
+            .info_list {
                 display: block;
                 width: 100%;
                 .info_icons {
                     display: inline-block;
-                    width: 100px;
+                    width: 80px;
                     vertical-align: middle;
                     margin: 5px 10px 5px 0;
                     img {
@@ -162,7 +164,7 @@ export default {
         // 大字在左樣式
         .info_word.left {
             span {
-                border-right: 5px solid $yellow;
+                border-right: 5px solid $light-yellow;
             }
         }
         // 大字在右樣式
@@ -170,7 +172,7 @@ export default {
             position: relative;
             left: 68%;
             span {
-                border-left: 5px solid $yellow;
+                border-left: 5px solid $light-yellow;
             }
         }
         // 詳細資訊在左右樣式

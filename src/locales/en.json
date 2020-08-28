@@ -1,5 +1,5 @@
 {
-  "navs": [ "Web Develop", "Growth Experience", "Job Experience", "Portfolio", "Contact Me" ],
+  "navs": [ "Web Develop", "Portfolio", "Job Experience", "Contact Me" ],
   "skills": [
     [ "RWD architecture design", "RWD page development", "Web SEO Planning", "Web Api development" ], 
     [ "Server development", "Server Api development", "Server setup" ], 
