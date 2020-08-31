@@ -73,7 +73,7 @@ export default {
                     width: 5px;
                     height: 5px;
                     border-radius: 100%;
-                    background-color: $light-yellow;
+                    background-color: $yellow;
                     position: absolute;
                     top: 0;
                     bottom: 0;

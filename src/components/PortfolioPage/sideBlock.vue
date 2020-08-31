@@ -17,8 +17,11 @@ export default {
     @import "../../assets/scss/_style.scss";
     .side_block {
         display: inline-block;
-        width: 30%;
+        width: 15%;
+        height: 100%;
+        border-right: 1px solid $grey;
         vertical-align: top;
+        padding: 30px 0 0;
         ul {
             display: block;
             width: 100%;

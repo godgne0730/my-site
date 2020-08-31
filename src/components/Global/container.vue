@@ -34,6 +34,19 @@ export default {
             font-size: $h2;
             text-align: center;
             margin: 10px 0 30px;
+            position: relative;
+        }
+        .sub_title::before {
+            display: block;
+            content: "";
+            width: 50px;
+            height: 3px;
+            background-color: $yellow;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -10px;
+            margin: auto;
         }
     }
 </style>

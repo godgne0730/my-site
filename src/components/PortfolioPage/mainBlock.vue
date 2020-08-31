@@ -15,7 +15,12 @@ export default {
     @import "../../assets/scss/_style.scss";
     .main_block {
         display: inline-block;
-        width: 70%;
+        width: 85%;
+        height: 100%;
+        text-align: left;
         vertical-align: top;
+        padding: 30px 20px 50px;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 </style>
