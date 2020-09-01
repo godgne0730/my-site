@@ -8,10 +8,12 @@
 <script>
 export default {
     props: {
+        // 名稱
         name: {
-            type: String,
+            type: Number,
             required: true
         },
+        // 啟動中
         onActive: {
             type: Boolean,
             default: false,

@@ -15,6 +15,7 @@ export default {
     .wrapper {
         display: block;
         width: 100%;
+        overflow: hidden;
         @include pc-ver {
             max-width: $wrapper;
             margin: 0 auto;

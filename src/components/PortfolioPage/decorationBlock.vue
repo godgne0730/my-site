@@ -29,13 +29,18 @@ export default {
         background-color: #FFF;
         border-radius: 0px 0px 5px 5px;
         overflow: hidden;
+        position: relative;
         .window_bar {
             display: block;
             width: 100%;
+            height: 36px;
             background-color: rgb(29, 30, 33);
             box-shadow: 0px 2px 10px 1px $black;
             text-align: left;
             padding: 10px 0 10px 10px;
+            overflow-x: hidden;
+            position: relative;
+            z-index: 2;
             .window_button {
                 display: inline-block;
                 width: 11px;

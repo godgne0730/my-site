@@ -108,7 +108,7 @@ export default {
         initNavActive: function() {
             for (let i = 0; i < this.navs.length; i++) {
                 this.navs[i].onActive = false;
-                if (this.topOffset - document.querySelector(`${this.navs[i].id}`).offsetTop >= -60) {
+                if (document.querySelector(`${this.navs[i].id}`).getBoundingClientRect().top < 65 && document.querySelector(`${this.navs[i].id}`).getBoundingClientRect().bottom > 65) {
                     this.navs[i].onActive = true;
                 }
             }

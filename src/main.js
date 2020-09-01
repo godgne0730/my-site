@@ -7,7 +7,7 @@ import VueParticles from "vue-particles";
 import VueScrollTo from "vue-scrollto";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faChevronDown, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 Vue.config.productionTip = false
 Vue.use(VueTypedJs);
@@ -26,7 +26,7 @@ Vue.use(VueScrollTo, {
   y: true
 })
 
-library.add(faChevronDown, faChevronRight);
+library.add(faChevronDown, faChevronLeft);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 new Vue({

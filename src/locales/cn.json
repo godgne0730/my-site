@@ -23,5 +23,60 @@
     [ "网页UI/UX设计", "企业形象网站开發", "后台系统网站开發", "Vue.js MVVM前端框架开發", "HTML+CSS+JavaScript开發网页前端", "jQuery快速开發前端网页", "CSS网页动画开發" ],
     [ "后端伺服器开發、架设", "Node.js Expresss伺服器开發", "PHP Api开發", "后台系统伺服器开發", "虚拟机架设", "PM2多线程管理"  ],
     [ "资料库规划、表单正规化设计", "MySQL资料库建立、架设", "SQLite资料库环境建立、架设","PHPMyAdmin架设资料库环境" ]
+  ],
+  "portfolioTypes": [ "企业官方网站", "后台管理系统", "个人形象网站" ],
+  "portfolios": [ 
+    {
+      "name": "Hosailey",
+      "info": "马来西亚沙巴公司企业形象网站，使用Vue-cli3开發，利用Vue i18n开發多语言环境"
+    },
+    {
+      "name": "KeChen行政管理系统",
+      "info": "KeChen企业内部行政管理、项目管理系统，前端使用Vue-cli3开發，后端使用Express开發伺服器，做完登入及系统切换功能后专案暂停，未完成"
+    },
+    {
+      "name": "TikChat",
+      "info": "TikChat聊天软体官方网站，使用Vue-cli3开發，利用Vue i18n开發多语言环境"
+    },
+    {
+      "name": "KeChen人才网站管理系统",
+      "info": "KeChen企业人才招募网站管理系统，HR可利用本系统更新招募网站上的职缺开放内容，前端使用Vue-cli3开發，后端使用Express开發伺服器"
+    },
+    {
+      "name": "KeChen人才招募网站",
+      "info": "KeChen企业人才招募网站，使用Vue-cli3开發，利用Vue i18n开發多语言环境"
+    },
+    {
+      "name": "多乐游戏",
+      "info": "多乐游戏官方网站，使用Vue-cli3开發，利用Vue i18n开發多语言环境"
+    },
+    {
+      "name": "AOWOO",
+      "info": "AOWOO聊天软体官方网站，使用HTML5+Css3+JavaScript+jQuery开發"
+    },
+    {
+      "name": "GDSA射击俱乐部",
+      "info": "射击俱乐部官方网站，使用Vue-cli3开發"
+    },
+    {
+      "name": "皇室游戏",
+      "info": "皇室游戏官方网站，使用Vue-cli2开發，利用Vue i18n开發多语言环境"
+    },
+    {
+      "name": "皇室游戏 游戏下载页",
+      "info": "皇室游戏游戏下载页面，使用HTML5+Css3+JavaScript+jQuery开發"
+    },
+    {
+      "name": "皇室游戏(旧版)",
+      "info": "皇室游戏官方网站，使用Vue-cli2开發，利用Vue i18n开發多语言环境"
+    },
+    {
+      "name": "关大师风水网站",
+      "info": "关大师风水大师形象网站，使用HTML5+Css3+JavaScript+jQuery开發"
+    },
+    {
+      "name": "乐悠游",
+      "info": "深圳乐悠游企业官方网站，使用Vue-cli2开發"
+    }
   ]
 }

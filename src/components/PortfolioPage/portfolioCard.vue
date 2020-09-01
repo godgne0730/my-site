@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio_card" :class="this.$i18n.locale">
+    <div class="portfolio_card" @click="showMore(index)">
         <div class="portfolio_image">
             <img :src="image" :alt="name">
         </div>
@@ -19,6 +19,11 @@
 <script>
 export default {
     props: {
+        // 
+        index: {
+            type: Number,
+            required: true
+        },
         // 作品名稱
         name: {
             type: String,
@@ -44,6 +49,15 @@ export default {
             type: Array,
             required: true
         }
+    },
+    methods: {
+        /**
+         * 顯示更多資料
+         * @param {Number} key 鍵值(哪一個卡片被點選到)
+         */
+        showMore: function(key) {
+            this.$emit("showMore", key)
+        }
     }
 }
 </script>
@@ -54,7 +68,7 @@ export default {
     .portfolio_card {
         display: inline-block;
         width: 30%;
-        height: 300px;
+        height: 280px;
         cursor: pointer;
         border: 1px solid $light-grey;
         border-radius: 3px 3px 3px 3px;
@@ -77,6 +91,18 @@ export default {
                 width: 100%;
                 font-size: $info;
                 line-height: 20px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            h4::before {
+                display: block;
+                content: "";
+                width: 40px;
+                height: 3px;
+                background-color: $yellow;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
             }
             span {
                 display: block;
@@ -84,14 +110,19 @@ export default {
                 color: $dark-grey;
                 font-size: 12px;
                 line-height: 18px;
+                margin-bottom: 5px;
             }
             article {
-                display: block;
+                display: -webkit-box;
                 width: 100%;
-                min-height: 100px;
                 color: $grey;
                 font-size: 12px;
                 line-height: 18px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                margin-bottom: 30px;
             }
             img {
                 display: inline-block;
@@ -124,7 +155,6 @@ export default {
             }
         }
     }
-
     .portfolio_card:hover {
         .portfolio_info {
             .more_info {

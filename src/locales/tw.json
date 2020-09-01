@@ -23,5 +23,60 @@
     [ "網頁UI/UX設計", "企業形象網站開發", "後台系統網站開發", "Vue.js MVVM前端框架開發", "HTML+CSS+JavaScript開發網頁前端", "jQuery快速開發前端網頁", "CSS網頁動畫開發" ],
     [ "後端伺服器開發、架設", "Node.js Expresss伺服器開發", "PHP Api開發", "後台系統伺服器開發", "虛擬機架設", "PM2多線程管理"  ],
     [ "資料庫規劃、表單正規化設計", "MySQL資料庫建立、架設", "SQLite資料庫環境建立、架設","PHPMyAdmin架設資料庫環境" ]
+  ],
+  "portfolioTypes": [ "企業官方網站", "後台管理系統", "個人形象網站" ],
+  "portfolios": [ 
+    {
+      "name": "Hosailey",
+      "info": "馬來西亞沙巴公司企業形象網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+    },
+    {
+      "name": "KeChen行政管理系統",
+      "info": "KeChen企業內部行政管理、項目管理系統，前端使用Vue-cli3開發，後端使用Express開發伺服器，做完登入及系統切換功能後專案暫停，未完成"
+    },
+    {
+      "name": "TikChat",
+      "info": "TikChat聊天軟體官方網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+    },
+    {
+      "name": "KeChen人才網站管理系統",
+      "info": "KeChen企業人才招募網站管理系統，HR可利用本系統更新招募網站上的職缺開放內容，前端使用Vue-cli3開發，後端使用Express開發伺服器"
+    },
+    {
+      "name": "KeChen人才招募網站",
+      "info": "KeChen企業人才招募網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+    },
+    {
+      "name": "多樂遊戲",
+      "info": "多樂遊戲官方網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+    },
+    {
+      "name": "AOWOO",
+      "info": "AOWOO聊天軟體官方網站，使用HTML5+Css3+JavaScript+jQuery開發"
+    },
+    {
+      "name": "GDSA射擊俱樂部",
+      "info": "射擊俱樂部官方網站，使用Vue-cli3開發"
+    },
+    {
+      "name": "皇室遊戲",
+      "info": "皇室遊戲官方網站，使用Vue-cli2開發，利用Vue i18n開發多語言環境"
+    },
+    {
+      "name": "皇室遊戲 遊戲下載頁",
+      "info": "皇室遊戲遊戲下載頁面，使用HTML5+Css3+JavaScript+jQuery開發"
+    },
+    {
+      "name": "皇室遊戲(舊版)",
+      "info": "皇室遊戲官方網站，使用Vue-cli2開發，利用Vue i18n開發多語言環境"
+    },
+    {
+      "name": "關大師風水網站",
+      "info": "關大師風水大師形象網站，使用HTML5+Css3+JavaScript+jQuery開發"
+    },
+    {
+      "name": "樂悠遊",
+      "info": "深圳樂悠遊企業官方網站，使用Vue-cli2開發"
+    }
   ]
 }
