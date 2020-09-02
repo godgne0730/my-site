@@ -7,8 +7,8 @@
         </div>
         <div class="more_info">
             <h4>{{ name }}</h4>
-            <video id="video_player" controls muted>
-                <source :src="video" type="video/webm">
+            <video id="video_player" autoplay controls muted>
+                <source :src="src" type="video/mp4">
             </video>
             <div class="pages_container">
                 <div class="pages_card" v-for="(item, index) in pages"
@@ -29,8 +29,8 @@ export default {
             type: String,
             required: true
         },
-        video: {
-            type: String,
+        videos: {
+            type: Array,
             required: true
         },
         pages: {
@@ -45,7 +45,8 @@ export default {
     },
     data() {
         return {
-            arrow: "chevron-left"
+            arrow: "chevron-left",
+            src: ""
         }
     },
     methods: {
@@ -55,14 +56,9 @@ export default {
          */
         initPlayer: function(key) {
             let player = document.querySelector("#video_player");
-            if (key === undefined) {
-                player.load();
-                player.play();
-            } else {
-                this.video = this.$props.pages[key].video;
-                player.load();
-                player.play();
-            }
+            if (!key) this.src = this.$props.videos[0];
+            else if (key) this.src = this.$props.videos[key];
+            player.load();
         },
         /**
          * 關閉本彈窗
@@ -72,7 +68,7 @@ export default {
         }
     },
     watch: {
-        "$props.video": function() {
+        "$props.videos": function() {
             this.initPlayer();
         }
     }
@@ -84,15 +80,16 @@ export default {
     @import "../../assets/scss/_style.scss";
     .more_block {
         display: block;
-        width: 0;
-        height: 0;
+        width: 100%;
+        height: calc(100% - 36px);
         background-color: #FFF;
-        padding: 40px 30px 30px;
-        overflow-y: scroll;
+        padding: 10px 30px 30px;
         position: absolute;
-        left: 0;
+        left: 100%;
+        right: 0;
         bottom: 0;
         z-index: 1;
+        transition: left 0.3s;
         .close_btn {
             display: block;
             width: 30px;
@@ -162,9 +159,11 @@ export default {
                     cursor: pointer;
                     margin-right: 2%;
                     padding: 10px;
+                    vertical-align: top;
                     img {
                         display: block;
-                        height: 100px;
+                        max-width: 100%;
+                        max-height: 100px;
                         margin: 0 auto;
                     }
                     span {
@@ -180,7 +179,30 @@ export default {
         }
     }
     .more_block.show {
-        width: 100%;
-        height: 100%;
+        left: 0;
+        overflow-y: scroll;
+        transition: left 0.3s;
+    }
+    /* total width */
+    .more_block::-webkit-scrollbar {
+        background-color: #fff;
+        width: 16px;
+    }
+
+    /* background of the scrollbar except button or resizer */
+    .more_block::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+
+    /* scrollbar itself */
+    .more_block::-webkit-scrollbar-thumb {
+        background-color: #babac0;
+        border-radius: 16px;
+        border: 4px solid #fff;
+    }
+
+    /* set button(top and bottom of the scrollbar) */
+    .more_block::-webkit-scrollbar-button {
+        display:none;
     }
 </style>

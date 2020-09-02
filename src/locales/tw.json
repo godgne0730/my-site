@@ -28,55 +28,68 @@
   "portfolios": [ 
     {
       "name": "Hosailey",
-      "info": "馬來西亞沙巴公司企業形象網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+      "info": "馬來西亞沙巴公司企業形象網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境",
+      "pages": [ "首頁", "關於公司", "結構體系", "建設思路" ]
     },
     {
       "name": "KeChen行政管理系統",
-      "info": "KeChen企業內部行政管理、項目管理系統，前端使用Vue-cli3開發，後端使用Express開發伺服器，做完登入及系統切換功能後專案暫停，未完成"
+      "info": "KeChen企業內部行政管理、項目管理系統，前端使用Vue-cli3開發，後端使用Express開發伺服器，做完登入及系統切換功能後專案暫停，未完成",
+      "pages": [ "登入" ]
     },
     {
       "name": "TikChat",
-      "info": "TikChat聊天軟體官方網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+      "info": "TikChat聊天軟體官方網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境",
+      "pages": [ "首頁", "應用", "接入", "疑問", "隱私" ]
     },
     {
       "name": "KeChen人才網站管理系統",
-      "info": "KeChen企業人才招募網站管理系統，HR可利用本系統更新招募網站上的職缺開放內容，前端使用Vue-cli3開發，後端使用Express開發伺服器"
+      "info": "KeChen企業人才招募網站管理系統，HR可利用本系統更新招募網站上的職缺開放內容，前端使用Vue-cli3開發，後端使用Express開發伺服器",
+      "pages": [ "登入" ]
     },
     {
       "name": "KeChen人才招募網站",
-      "info": "KeChen企業人才招募網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+      "info": "KeChen企業人才招募網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境",
+      "pages": [ "首頁", "職缺詳情" ]
     },
     {
       "name": "多樂遊戲",
-      "info": "多樂遊戲官方網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境"
+      "info": "多樂遊戲官方網站，使用Vue-cli3開發，利用Vue i18n開發多語言環境",
+      "pages": [ "首頁", "遊戲列表", "玩法介紹", "商務合作", "聯繫我們", "遊戲詳情" ]
     },
     {
       "name": "AOWOO",
-      "info": "AOWOO聊天軟體官方網站，使用HTML5+Css3+JavaScript+jQuery開發"
+      "info": "AOWOO聊天軟體官方網站，使用HTML5+Css3+JavaScript+jQuery開發",
+      "pages": [ "首頁", "應用", "接入", "疑問", "隱私" ]
     },
     {
       "name": "GDSA射擊俱樂部",
-      "info": "射擊俱樂部官方網站，使用Vue-cli3開發"
+      "info": "射擊俱樂部官方網站，使用Vue-cli3開發",
+      "pages": [ "首頁", "會員", "比賽", "俱樂部", "排行", "商店", "關於", "資源" ]
     },
     {
       "name": "皇室遊戲",
-      "info": "皇室遊戲官方網站，使用Vue-cli2開發，利用Vue i18n開發多語言環境"
+      "info": "皇室遊戲官方網站，使用Vue-cli2開發，利用Vue i18n開發多語言環境",
+      "pages": [ "首頁", "遊戲", "遊戲規則", "商務合作", "關於我們", "遊戲詳情" ]
     },
     {
       "name": "皇室遊戲 遊戲下載頁",
-      "info": "皇室遊戲遊戲下載頁面，使用HTML5+Css3+JavaScript+jQuery開發"
+      "info": "皇室遊戲遊戲下載頁面，使用HTML5+Css3+JavaScript+jQuery開發",
+      "pages": [ "首頁" ]
     },
     {
       "name": "皇室遊戲(舊版)",
-      "info": "皇室遊戲官方網站，使用Vue-cli2開發，利用Vue i18n開發多語言環境"
+      "info": "皇室遊戲官方網站，使用Vue-cli2開發，利用Vue i18n開發多語言環境",
+      "pages": [ "首頁", "遊戲", "玩法介紹", "合作", "客服支援", "遊戲詳情" ]
     },
     {
       "name": "關大師風水網站",
-      "info": "關大師風水大師形象網站，使用HTML5+Css3+JavaScript+jQuery開發"
+      "info": "關大師風水大師形象網站，使用HTML5+Css3+JavaScript+jQuery開發",
+      "pages": [ "首頁" ]
     },
     {
       "name": "樂悠遊",
-      "info": "深圳樂悠遊企業官方網站，使用Vue-cli2開發"
+      "info": "深圳樂悠遊企業官方網站，使用Vue-cli2開發",
+      "pages": [ "首頁", "招聘" ]
     }
   ]
 }

@@ -1,6 +1,7 @@
 <template>
     <li class="side_option"
-        :class="{ 'active': onActive }">
+        :class="{ 'active': onActive }"
+        @click="yearFilter(name)">
         {{ name }}
     </li>
 </template>
@@ -20,9 +21,13 @@ export default {
             required: true
         }
     },
-    data() {
-        return {
-
+    methods: {
+        /**
+         * 按照年份篩選排序 
+         * @param {Number} year 要篩選的年份
+         */
+        yearFilter: function(year) {
+            this.$emit("yearFilter", year);
         }
     }
 }
@@ -36,9 +41,11 @@ export default {
         display: block;
         width: 100%;
         color: $grey;
+        cursor: pointer;
         font-family: PressStart;
         font-size: $h3;
         text-align: center;
         padding: 15px 0;
+        background-color: $yellow;
     }
 </style>
