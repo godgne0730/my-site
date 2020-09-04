@@ -6,6 +6,7 @@
                     <side-option v-for="(item, index) in sideOptions"
                         :key="'side_'+index"
                         :name="item.name"
+                        :count="item.count"
                         :onActive="item.onActive"
                         @yearFilter="yearFilter" />
                 </side-block>
@@ -21,6 +22,7 @@
                         @showMore="initMoreData" />
                 </main-block>
                 <more-block :name="moreShows.name"
+                    :info="moreShows.info"
                     :pages="moreShows.pages"
                     :videos="moreShows.videos"
                     :onActive="activeMore"
@@ -55,14 +57,17 @@ export default {
             sideOptions: [
                 {
                     name: 2020,
+                    count: 0,
                     onActive: false
                 },
                 {
                     name: 2019,
+                    count: 0,
                     onActive: false
                 },
                 {
                     name: 2018,
+                    count: 0,
                     onActive: false
                 }
             ],
@@ -75,6 +80,7 @@ export default {
             // 更多資訊資料
             moreShows: {
                 name: "",
+                info: "",
                 pages: [],
                 videos: []
             },
@@ -141,7 +147,7 @@ export default {
                 },
                 {
                     name: this.$t("portfolios[2].name"/*TikChat*/),
-                    image: require("../../assets/image/portfolios/tikchat.png"),
+                    image: require("../../assets/image/portfolios/tikChat.png"),
                     year: 2020,
                     type: this.$t("portfolioTypes[0]"/*企業官方網站*/),
                     info: this.$t("portfolios[2].info"/*TikChat聊天軟體官方網站*/),
@@ -474,6 +480,7 @@ export default {
         initMoreData: function(key) {
             this.moreShows.videos = []; // 清空更多資料的影片陣列
             this.moreShows.name = this.filtedArray[key].name; // 將被選定的名字傳入更多資料
+            this.moreShows.info = this.filtedArray[key].info; // 將被選定的詳細介紹傳入更多資料
             this.moreShows.pages = this.filtedArray[key].pages; // 將被選定的分頁傳入更多資料
             for (let i = 0; i < this.filtedArray[key].pages.length; i++) {
                 this.moreShows.videos.push(this.filtedArray[key].pages[i].video); // 將影片push進更多資料的影片陣列
@@ -501,6 +508,20 @@ export default {
             }
         },
         /**
+         * 計算各年份的作品數量
+         */
+        countPortfolios: function() {
+            let yearArray = [];
+            for (let i = 0; i < this.sideOptions.length; i++) {
+                yearArray.push(this.sideOptions[i].name); // 將側邊欄的選項年份存進yearArray
+                for (let j = 0; j < this.filtedArray.length; j++) {
+                    if (this.filtedArray[j].year === yearArray[i]) { 
+                        this.sideOptions[i].count ++; // 比對作品集內的年份，若年份一樣count+1
+                    }
+                }
+            }
+        },
+        /**
          * 關閉彈窗
          */
         closeWindow: function() {
@@ -510,6 +531,7 @@ export default {
     },
     mounted() {
         this.yearFilter();
+        this.countPortfolios();
     },
     watch: {
         "$i18n.locale"() {

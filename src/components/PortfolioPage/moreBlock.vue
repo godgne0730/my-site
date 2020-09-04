@@ -7,6 +7,7 @@
         </div>
         <div class="more_info">
             <h4>{{ name }}</h4>
+            <article>{{ info }}</article>
             <video id="video_player" autoplay controls muted>
                 <source :src="src" type="video/mp4">
             </video>
@@ -25,18 +26,27 @@
 <script>
 export default {
     props: {
+        // 名稱
         name: {
             type: String,
             required: true
         },
+        // 詳細介紹
+        info: {
+            type: String,
+            required: true
+        },
+        // 分頁影片
         videos: {
             type: Array,
             required: true
         },
+        // 分頁內容
         pages: {
             type: Array,
             required: true
         },
+        // 是否開啟
         onActive: {
             type: Boolean,
             default: false,
@@ -141,11 +151,20 @@ export default {
                 left: 0;
                 bottom: -8px;
             }
+            article {
+                display: block;
+                width: 100%;
+                color: $grey;
+                font-size: $info;
+                text-align: left;
+                line-height: 18px;
+                margin: 20px 0 10px;
+            }
             video {
                 display: block;
                 width: 100%;
                 height: 400px;
-                margin: 30px 0;
+                margin: 20px 0;
             }
             .pages_container {
                 display: block;

@@ -3,6 +3,7 @@
         :class="{ 'active': onActive }"
         @click="yearFilter(name)">
         {{ name }}
+        <span>({{ count }})</span>
     </li>
 </template>
 
@@ -11,6 +12,11 @@ export default {
     props: {
         // 名稱
         name: {
+            type: Number,
+            required: true
+        },
+        // 數量
+        count: {
             type: Number,
             required: true
         },
@@ -40,12 +46,42 @@ export default {
     .side_option {
         display: block;
         width: 100%;
-        color: $grey;
+        color: $dark-grey;
         cursor: pointer;
-        font-family: PressStart;
-        font-size: $h3;
+        font-family: AuraSon;
+        font-size: $h2;
         text-align: center;
-        padding: 15px 0;
+        padding: 10px 0;
+        position: relative;
+        span {
+            font-family: Unbutu;
+            font-size: $info;
+        }
+    }
+    .side_option::after {
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
         background-color: $yellow;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: width 0.3s;
+    }
+    .side_option:hover::after {
+        width: 90px;
+        height: 3px;
+        transition: width 0.3s;
+    }
+    .side_option.active {
+        color: $black;
+    }
+    .side_option.active::after {
+        width: 90px;
+        height: 3px;
+        transition: width 0.3s;
     }
 </style>

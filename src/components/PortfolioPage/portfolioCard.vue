@@ -1,8 +1,6 @@
 <template>
     <div class="portfolio_card" @click="showMore(index)">
-        <div class="portfolio_image">
-            <img :src="image" :alt="name">
-        </div>
+        <div class="portfolio_image" :style="{ 'background-image': 'url('+ image +')'}" />
         <div class="portfolio_info">
             <h4>{{ name }}</h4>
             <span>{{ type }}</span>
@@ -60,7 +58,7 @@ export default {
         }
     }
 }
-</script>
+</script>-0[plk]
 
 <style lang="scss" scoped>
     @import "../../assets/scss/_rwd.scss";
@@ -68,7 +66,7 @@ export default {
     .portfolio_card {
         display: inline-block;
         width: 30%;
-        height: 280px;
+        height: 320px;
         cursor: pointer;
         border: 1px solid $light-grey;
         border-radius: 3px 3px 3px 3px;
@@ -77,10 +75,11 @@ export default {
         .portfolio_image {
             display: block;
             width: 100%;
-            img {
-                display: block;
-                width: 100%;
-            }
+            height: 150px;
+            background-size: 100px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
         }
         .portfolio_info {
             display: block;
