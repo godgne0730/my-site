@@ -9,14 +9,17 @@
 <script>
 export default {
     props: {
+        // 語言選項名稱
         name: {
             type: String,
             required: true
         },
+        // 語言選項鍵值
         val: {
             type: String,
             required: false
         },
+        // 該語種啟動中
         onActive: {
             type: Boolean,
             default: false,
@@ -25,11 +28,11 @@ export default {
     },
     methods: {
         /**
-         * click options to change active language
-         * @param {String} val which language onclick 
+         * 點擊新語種切換目前顯示語言
+         * @param {String} key 被點選到語言的鍵值 
          */
-        changeLang: function(val) {
-            this.$emit("changeLang", val);
+        changeLang: function(key) {
+            this.$emit("changeLang", key);
         }
     }
 }

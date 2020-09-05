@@ -1,5 +1,5 @@
 <template>
-    <div class="website_logo">
+    <div class="website_logo" @click="scrollToTop">
         <h1>{{ name }}</h1>
     </div>
 </template>
@@ -7,9 +7,21 @@
 <script>
 export default {
     props: {
+        // logo
         name: {
             type: String,
             required: true
+        }
+    },
+    methods: {
+        /**
+         * 畫面捲動至頂端
+         */
+        scrollToTop: function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
         }
     }
 }

@@ -17,10 +17,12 @@
 <script>
 export default {
     props: {
+        // icon圖片資訊物件
         img: {
             type: Object,
             required: true
         },
+        // 說明內容陣列
         infos: {
             type: Array,
             required: true

@@ -110,9 +110,10 @@ export default {
             cursor: pointer;
             margin: 10px 0 0;
             position: relative;
+            transition: all 0.3s;
             svg {
-                width: 15px;
-                height: 15px;
+                width: 12px;
+                height: 12px;
                 color: $grey;
                 position: absolute;
                 top: 0;
@@ -120,13 +121,15 @@ export default {
                 left: 0;
                 bottom: 0;
                 margin: auto;
+                transition: all 0.3s;
             }
         }
         .close_btn:hover {
-            background-color: $light-yellow;
-            border: 1px solid $light-yellow;
+            border: 1px solid $yellow;
+            transition: all 0.3s;
             svg {
-                color: #FFF;
+                color: $yellow;
+                transition: all 0.3s;
             }
         }
         .more_info {

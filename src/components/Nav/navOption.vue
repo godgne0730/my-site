@@ -9,14 +9,17 @@
 <script>
 export default {
     props: {
+        // 導覽列選項名稱
         name: {
             type: String,
             required: true
         },
+        // 滾動至章節的id
         id: {
             type: String,
             required: true
         },
+        // 根據目前顯示的區塊顯示啟動中
         onActive: {
             type: Boolean,
             required: true

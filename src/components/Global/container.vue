@@ -11,9 +11,10 @@
 <script>
 export default {
     props: {
+        // 區塊標題
         title: {
             type: String,
-            require: false
+            required: false
         }
     }
 }

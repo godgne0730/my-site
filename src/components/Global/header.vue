@@ -1,9 +1,7 @@
 <template>
     <header :class="{'show_header': this.topOffset > 0}">
         <wrapper>
-            <!-- logo -->
             <web-logo :name="logo" />
-            <!-- nav bar -->
             <nav-bar>
                 <nav-option v-for="(item, index) in navs"
                     :key="'nav_'+index"
@@ -11,7 +9,6 @@
                     :id="item.id"
                     :onActive="item.onActive" />
             </nav-bar>
-            <!-- language option -->
             <lang-bar>
                 <lang-option v-for="(item, index) in langs"
                     :key="'lang_'+index"
@@ -122,14 +119,14 @@ export default {
         },
         /**
          * 點擊選項時，切換目前顯示語言
-         * @param {String} val 被點擊到的語言 
+         * @param {String} key 被點擊到的語言鍵值
          */
-        changeLang: function(val) {
-            if (val !== null) {
-                this.$i18n.locale = val; // 切換i18n至新語言
-                window.localStorage.setItem("Wei's_language", val); // 設定webstorage
+        changeLang: function(key) {
+            if (key !== null) {
+                this.$i18n.locale = key; // 切換i18n至新語言
+                window.localStorage.setItem("Wei's_language", key); // 設定webstorage
                 for (let i = 0; i < this.langs.length; i ++) {
-                    if (this.langs[i].val === val) this.langs[i].onActive = true;
+                    if (this.langs[i].key === key) this.langs[i].onActive = true;
                     else this.langs[i].onActive = false;
                 }
             // 初始化語言環境
@@ -138,7 +135,7 @@ export default {
                 this.$i18n.locale = "tw";
                 for (let i = 0; i < this.langs.length; i ++) {
                     console.log(this.langs[i].onActive);
-                    if (this.langs[i].val === val) this.langs[i].onActive = true;
+                    if (this.langs[i].key === key) this.langs[i].onActive = true;
                     else this.langs[i].onActive = false;
                 }
             }
