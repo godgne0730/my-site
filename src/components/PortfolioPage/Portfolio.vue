@@ -493,7 +493,7 @@ export default {
          * @param {Number} year 要篩選的年份
          */
         yearFilter: function(year) {
-            let mainBlock = document.querySelector(".main_block");
+            let mainBlock = document.querySelector(".main_block"); // 取得主要顯示作品集視窗
             this.filtedArray = []; // 將篩選後陣列歸零
             if (year) { // 如果有傳入要篩選的年份
                 this.yearTemp = year; // 暫存要篩選的年份
@@ -504,7 +504,7 @@ export default {
                     this.sideOptions[j].onActive = false; // 重置側邊欄的啟動狀態
                     if (this.sideOptions[j].name === year) this.sideOptions[j].onActive = true; // 將側邊欄選定的年份設為啟動中
                 }
-                mainBlock.scrollTo(0, 0);
+                mainBlock.scrollTo(0, 0); // 將顯示作品集視窗捲動置頂
             } else if (!year) { // 如果沒有要篩選的陣列
                 this.filtedArray = this.portfolios; // 將所有i18n的陣列資料傳入篩選後的陣列
             }

@@ -15,7 +15,7 @@
                 <div class="pages_card" v-for="(item, index) in pages"
                     :key="'image_'+index"
                     @click="initPlayer(index)">
-                    <img :src="item.image" :alt="item.name">
+                    <div class="card_image" :style="{ 'background-image': 'url('+ item.image +')'}" />
                     <span>{{ item.name }}</span>
                 </div>
             </div>
@@ -179,22 +179,35 @@ export default {
                     border: 1px solid $grey;
                     border-radius: 3px 3px 3px 3px;
                     cursor: pointer;
-                    margin-right: 2%;
+                    margin: 0 2% 10px 0;
                     padding: 10px;
                     vertical-align: top;
-                    img {
+                    transition: border 0.3s;
+                    .card_image {
                         display: block;
-                        max-width: 100%;
-                        max-height: 100px;
-                        margin: 0 auto;
+                        width: 100%;
+                        height: 100px;
+                        background-size: 100% auto;
+                        background-position: center center;
+                        background-repeat: no-repeat;
                     }
                     span {
                         display: block;
                         width: 100%;
+                        color: $grey;
                         font-size: $info;
                         line-height: 20px;
                         text-align: center;
-                        margin: 5px 0;
+                        margin: 10px 0 5px;
+                        transition: color 0.3s;
+                    }
+                }
+                .pages_card:hover {
+                    border: 1px solid $yellow;
+                    transition: border 0.3s;
+                    span {
+                        color: $black;
+                        transition: color 0.3s;
                     }
                 }
             }

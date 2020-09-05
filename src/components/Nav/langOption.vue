@@ -53,7 +53,7 @@ export default {
 
     // 啟動中語言的樣式
     .lang_option.active {
-        color: #FFF;
+        color: $yellow;
     }
 
     .lang_option:hover {

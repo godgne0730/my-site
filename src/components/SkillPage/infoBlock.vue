@@ -151,6 +151,7 @@ export default {
         .info_word.en {
             span {
                 font-family: PressStart;
+                line-height: 60px;
             }
         }
         // 中文下的字體樣式

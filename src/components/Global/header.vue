@@ -68,16 +68,16 @@ export default {
                     id: "#Portfolio_Page",
                     onActive: false
                 },
-                // {
-                //     name: this.$t("navs[2]"/*個人經歷*/),
-                //     id: "",
-                //     onActive: false
-                // },
-                // {
-                //     name: this.$t("navs[3]"/*聯絡方式*/),
-                //     id: "",
-                //     onActive: false
-                // }
+                {
+                    name: this.$t("navs[2]"/*職位經歷*/),
+                    id: "#Experience_Page",
+                    onActive: false
+                },
+                {
+                    name: this.$t("navs[3]"/*聯絡方式*/),
+                    id: "#Contact_Page",
+                    onActive: false
+                }
             ],
             topOffset: 0
         }
@@ -126,7 +126,7 @@ export default {
                 this.$i18n.locale = key; // 切換i18n至新語言
                 window.localStorage.setItem("Wei's_language", key); // 設定webstorage
                 for (let i = 0; i < this.langs.length; i ++) {
-                    if (this.langs[i].key === key) this.langs[i].onActive = true;
+                    if (this.langs[i].val === key) this.langs[i].onActive = true;
                     else this.langs[i].onActive = false;
                 }
             // 初始化語言環境

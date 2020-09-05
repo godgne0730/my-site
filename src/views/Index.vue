@@ -4,6 +4,8 @@
 		<wrapper>
 			<skill-page />
 			<portfolio-page />
+			<experience-page />
+			<contact-page />
 		</wrapper>
 	</div>
 </template>
@@ -13,13 +15,17 @@ import wrapper from "../components/Global/wrapper.vue";
 import Hello from "../components/HelloPage/Hello.vue";
 import Skill from "../components/SkillPage/Skill";
 import Portfolio from "../components/PortfolioPage/Portfolio.vue";
+import Experience from "../components/ExperiencePage/Experience.vue";
+import Contact from "../components/ContactPage/Contact.vue";
 
 export default {
 	components: {
 		"wrapper": wrapper,
 		"hello-page": Hello,
 		"skill-page": Skill,
-		"portfolio-page": Portfolio
+		"portfolio-page": Portfolio,
+		"experience-page": Experience,
+		"contact-page": Contact
 	}
 }
 </script>

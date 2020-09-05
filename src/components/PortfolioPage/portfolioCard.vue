@@ -17,7 +17,7 @@
 <script>
 export default {
     props: {
-        // 
+        // 作品序列
         index: {
             type: Number,
             required: true

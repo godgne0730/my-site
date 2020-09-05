@@ -28,6 +28,7 @@ export default {
         height: 600px;
         background-color: #FFF;
         border-radius: 0px 0px 5px 5px;
+        padding-bottom: 35px;
         overflow: hidden;
         position: relative;
         .window_bar {

@@ -2,15 +2,18 @@
 	<main id="web" :class="this.$i18n.locale">
 		<web-header />
 		<router-view />
+		<web-footer />
 	</main>
 </template>
 
 <script>
 import header from "./components/Global/header.vue";
+import footer from "./components/Global/footer.vue";
 
 export default {
 	components: {
-		"web-header": header
+		"web-header": header,
+		"web-footer": footer
 	}
 }
 </script>

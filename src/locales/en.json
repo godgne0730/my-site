@@ -1,8 +1,131 @@
 {
-  "navs": [ "Web Develop", "Portfolio", "Job Experience", "Contact Me" ],
+  "navs": [ "Web Develop", "Portfolios", "Jobs Experience", "Contact Me" ],
   "skills": [
     [ "RWD architecture design", "RWD page development", "Web SEO Planning", "Web Api development" ], 
     [ "Server development", "Server Api development", "Server setup" ], 
     [ "Database design", "Database normalization", "Database setup & maintenance" ]
-  ]
+  ],
+  "skillTitles": [ 
+    { 
+      "word": "F",
+      "title": "Web Frontend"
+    },
+    {
+      "word": "B",
+      "title": "Web Backend"
+    },
+    {
+      "word": "D",
+      "title": "Web Database"
+    }
+  ],
+  "skillInfos": [
+    [ "Web UI/UX design", "Corporate image website development", "Back-end system website development", "Vue.js MVVM front-end framework development", "HTML+CSS+JavaScript development web front-end", "jQuery rapid development of front-end web pages ", "CSS web animation development" ],
+    [ "Back-end server development and setup", "Node.js Expresss server development", "PHP Api development", "Back-end system server development", "Virtual rack setup", "PM2 multi-thread management" ],
+    [ "Database planning, form formalization design", "MySQL database creation and establishment", "SQLite database environment establishment and establishment", "PHPMyAdmin establishment database environment"]
+  ],
+  "portfolioTypes": ["Corporate Official Website", "Backstage Management System", "Personal Image Website"],
+  "portfolios": [ 
+    {
+      "name": "Hosailey",
+      "info": "Malaysian Sabah company corporate image website, developed using Vue-cli3, using Vue i18n to develop a multilingual environment",
+      "pages": ["Index", "About Company", "Structural", "Ideas"]
+    },
+    {
+      "name": "KeChen OA System",
+      "info": "KeChen's internal administrative management and project management system, the front-end uses Vue-cli3 development, the back-end uses Express development server, the project is suspended after completing the login and system switching functions, and it is not completed",
+      "pages": [ "Login" ]
+    },
+    {
+      "name": "TikChat",
+      "info": "TikChat chat software official website, using Vue-cli3 to develop, using Vue i18n to develop a multilingual environment",
+      "pages": [ "Index", "Application", "Access", "FAQ", "Privacy"]
+    },
+    {
+      "name": "KeChen Recruitment System",
+      "info": "KeChen enterprise talent recruitment website management system, HR can use this system to update the open content of the recruitment website, the front end uses Vue-cli3 development, the back end uses Express development server",
+      "pages": [ "Login" ]
+    },
+    {
+      "name": "KeChen Recruitment Website",
+      "info": "KeChen enterprise talent recruitment website, developed using Vue-cli3, using Vue i18n to develop a multilingual environment",
+      "pages": [ "Index", "Details" ]
+    },
+    {
+      "name": "Dollar Games",
+      "info": "Dollar Games's website, using Vue-cli3 to develop, using Vue i18n to develop a multilingual environment",
+      "pages": [ "Index", "Games", "Rules", "Cooperation", "Contact", "Details" ]
+    },
+    {
+      "name": "AOWOO",
+      "info": "Official website of AOWOO chat software, developed using HTML5+Css3+JavaScript+jQuery",
+      "pages": [ "Index", "Application", "Access", "FAQ", "Privacy"]
+    },
+    {
+      "name": "GDSA Shooting Club",
+      "info": "Shooting Club's website, developed using Vue-cli3",
+      "pages": [ "Index", "Member", "Race", "Club", "Ranking", "Shop", "About", "Resource" ]
+    },
+    {
+      "name": "Royal Games",
+      "info": "Royal Games's website, developed using Vue-cli2, using Vue i18n to develop a multilingual environment",
+      "pages": [ "Index", "Games", "Rules", "Cooperation", "About", "Details" ]
+    },
+    {
+      "name": "Royal Games Download Page",
+      "info": "Royal Games's download page, developed using HTML5+Css3+JavaScript+jQuery",
+      "pages": [ "Index" ]
+    },
+    {
+      "name": "Royal Games(Old)",
+      "info": "Royal Games's website, developed using Vue-cli2, using Vue i18n to develop a multilingual environment",
+      "pages": [ "Index", "Games", "Rules", "Cooperation", "Support", "Details" ]
+    },
+    {
+      "name": "Guan Master",
+      "info": "Guan Master images website, developed using HTML5+Css3+JavaScript+jQuery",
+      "pages": [ "Index" ]
+    },
+    {
+      "name": "LOVEUU",
+      "info": "Shenzhen LOVEUU The official website of the company, developed using Vue-cli2",
+      "pages": [ "Index", "Recruitment" ]
+    }
+  ],
+  "jobs": [
+    {
+      "title": "Web Full-end Engineer",
+      "company": "Kechen Technology Corporation",
+      "place": "Manila, Philippines",
+      "duties": [
+        "Development of the official website of the group game products.",
+        "Group product image website development.",
+        "Front-end development of the internal system of the group.",
+        "Back-end development of internal system of the group.",
+        "Building the internal server environment of the group, launching products, and maintaining them.",
+        "Collect the Group's Game Product Project Information.",
+        "Collect reference samples and revisions of the group product website.",
+        "Write a website product plan."
+      ]
+    },
+    {
+      "title": "Web Front-end Engineer",
+      "company": "Honeycomb Games",
+      "place": "Taipei, Taiwan",
+      "duties": [
+        "Company Image Website Development.",
+        "Front-end reconstruction of the company's internal data platform.",
+        "Development of new functions of the company's internal data platform.",
+        "Development of the official website of the company's game products.",
+        "Company server virtual machine setup."
+      ]
+    }
+  ],
+  "jobPlace": "Work Place",
+  "jobDuring": "During the job",
+  "jobDuty": "Job Duty",
+  "schools": [ "Institute for Information Industry-Web/APP front-end design engineers develop classes.", "Kainan University-Department of Information Management." ],
+  "age": "Age",
+  "birth": "Birthday",
+  "graduate": "Educations"
 }
