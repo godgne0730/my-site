@@ -20,6 +20,6 @@ export default {
         color: $grey;
         font-size: 12px;
         text-align: center;
-        padding: 50px 0;
+        padding: 60px 0;
     }
 </style>
