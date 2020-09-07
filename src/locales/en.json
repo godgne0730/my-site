@@ -28,47 +28,47 @@
   "portfolios": [ 
     {
       "name": "Hosailey",
-      "info": "Malaysian Sabah company corporate image website, developed using Vue-cli3, using Vue i18n to develop a multilingual environment",
+      "info": "Malaysian Sabah company corporate image website, developed using Vue-cli3, using Vue i18n to develop a multilingual environment.",
       "pages": ["Index", "About Company", "Structural", "Ideas"]
     },
     {
       "name": "KeChen OA System",
-      "info": "KeChen's internal administrative management and project management system, the front-end uses Vue-cli3 development, the back-end uses Express development server, the project is suspended after completing the login and system switching functions, and it is not completed",
+      "info": "KeChen's internal administrative management and project management system, the front-end uses Vue-cli3 development, the back-end uses Express development server, the project is suspended after completing the login and system switching functions, and it is not completed.",
       "pages": [ "Login" ]
     },
     {
       "name": "TikChat",
-      "info": "TikChat chat software official website, using Vue-cli3 to develop, using Vue i18n to develop a multilingual environment",
+      "info": "TikChat chat software official website, using Vue-cli3 to develop, using Vue i18n to develop a multilingual environment.",
       "pages": [ "Index", "Application", "Access", "FAQ", "Privacy"]
     },
     {
       "name": "KeChen Recruitment System",
-      "info": "KeChen enterprise talent recruitment website management system, HR can use this system to update the open content of the recruitment website, the front end uses Vue-cli3 development, the back end uses Express development server",
+      "info": "KeChen enterprise talent recruitment website management system, HR can use this system to update the open content of the recruitment website, the front end uses Vue-cli3 development, the back end uses Express development server.",
       "pages": [ "Login" ]
     },
     {
       "name": "KeChen Recruitment Website",
-      "info": "KeChen enterprise talent recruitment website, developed using Vue-cli3, using Vue i18n to develop a multilingual environment",
+      "info": "KeChen enterprise talent recruitment website, developed using Vue-cli3, using Vue i18n to develop a multilingual environment.",
       "pages": [ "Index", "Details" ]
     },
     {
       "name": "Dollar Games",
-      "info": "Dollar Games's website, using Vue-cli3 to develop, using Vue i18n to develop a multilingual environment",
+      "info": "Dollar Games's website, using Vue-cli3 to develop, using Vue i18n to develop a multilingual environment.",
       "pages": [ "Index", "Games", "Rules", "Cooperation", "Contact", "Details" ]
     },
     {
       "name": "AOWOO",
-      "info": "Official website of AOWOO chat software, developed using HTML5+Css3+JavaScript+jQuery",
+      "info": "Official website of AOWOO chat software, developed using HTML5+Css3+JavaScript+jQuery.",
       "pages": [ "Index", "Application", "Access", "FAQ", "Privacy"]
     },
     {
       "name": "GDSA Shooting Club",
-      "info": "Shooting Club's website, developed using Vue-cli3",
+      "info": "Shooting Club's website, developed using Vue-cli3.",
       "pages": [ "Index", "Member", "Race", "Club", "Ranking", "Shop", "About", "Resource" ]
     },
     {
       "name": "Royal Games",
-      "info": "Royal Games's website, developed using Vue-cli2, using Vue i18n to develop a multilingual environment",
+      "info": "Royal Games's website, developed using Vue-cli2, using Vue i18n to develop a multilingual environment.",
       "pages": [ "Index", "Games", "Rules", "Cooperation", "About", "Details" ]
     },
     {
@@ -78,18 +78,28 @@
     },
     {
       "name": "Royal Games(Old)",
-      "info": "Royal Games's website, developed using Vue-cli2, using Vue i18n to develop a multilingual environment",
+      "info": "Royal Games's website, developed using Vue-cli2, using Vue i18n to develop a multilingual environment.",
       "pages": [ "Index", "Games", "Rules", "Cooperation", "Support", "Details" ]
     },
     {
       "name": "Guan Master",
-      "info": "Guan Master images website, developed using HTML5+Css3+JavaScript+jQuery",
+      "info": "Guan Master images website, developed using HTML5+Css3+JavaScript+jQuery.",
       "pages": [ "Index" ]
     },
     {
       "name": "LOVEUU",
-      "info": "Shenzhen LOVEUU The official website of the company, developed using Vue-cli2",
+      "info": "Shenzhen LOVEUU The official website of the company, developed using Vue-cli2.",
       "pages": [ "Index", "Recruitment" ]
+    },
+    {
+      "name": "Stellar",
+      "info": "Team development project at III, using HTML5+Css3+JavaScript+PHP+jQuery.",
+      "pages": [ "Index", "Knowlege" ]
+    },
+    {
+      "name": "Island Travel",
+      "info": "Persernal development project at III, using HTML5+Css3+JavaScript+jQuery.",
+      "pages": [ "Index", "Spots", "Fun", "Hotels" ]
     }
   ],
   "jobs": [

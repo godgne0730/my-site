@@ -43,6 +43,12 @@ export default {
                     method: "tel:+886930297981"
                 },
                 {
+                    name: "E-Mail",
+                    image: require("../../assets/image/icons/icon_mail.png"),
+                    info: "wei0730@livemail.tw",
+                    method: "mailto:wei0730@livemail.tw"
+                },
+                {
                     name: "Line",
                     image: require("../../assets/image/icons/icon_line.png"),
                     info: "wei5730",

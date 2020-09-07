@@ -90,6 +90,16 @@
       "name": "乐悠游",
       "info": "深圳乐悠游企业官方网站，使用Vue-cli2开發",
       "pages": [ "首页", "招聘" ]
+    },
+    {
+      "name": "Stellar",
+      "info": "资策会团体专题开發，使用HTML5+Css3+JavaScript+PHP+jQuery开發",
+      "pages": [ "首页", "观星知识" ]
+    },
+    {
+      "name": "Island Travel",
+      "info": "资策会个人专题开發，使用HTML5+Css3+JavaScript+jQuery开發",
+      "pages": [ "首页", "海岛景点", "吃喝玩乐", "住宿一览" ]
     }
   ],
   "jobs": [

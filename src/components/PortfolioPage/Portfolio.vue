@@ -469,6 +469,56 @@ export default {
                             video: require("../../assets/video/sz_2.mp4")
                         }
                     ]
+                },
+                {
+                    name: this.$t("portfolios[13].name"/*Stellar*/),
+                    image: require("../../assets/image/portfolios/stellar.png"),
+                    year: 2018,
+                    type: this.$t("portfolioTypes[2]"/*個人形象網站*/),
+                    info: this.$t("portfolios[13].info"/*Stellar*/),
+                    tools: [ require("../../assets/image/icons/icon_html5.png"), require("../../assets/image/icons/icon_css3.png"), require("../../assets/image/icons/icon_js.png"), require("../../assets/image/icons/icon_php.png") ],
+                    pages: [
+                        {
+                            name: this.$t("portfolios[13].pages[0]"/*首頁*/),
+                            image: require("../../assets/image/portfolios/stellar_1.png"),
+                            video: require("../../assets/video/stellar_1.mp4")
+                        },
+                        {
+                            name: this.$t("portfolios[13].pages[1]"/*觀星知識*/),
+                            image: require("../../assets/image/portfolios/stellar_2.png"),
+                            video: require("../../assets/video/stellar_2.mp4")
+                        }
+                    ]
+                },
+                {
+                    name: this.$t("portfolios[14].name"/*Island Travel*/),
+                    image: require("../../assets/image/portfolios/island.png"),
+                    year: 2018,
+                    type: this.$t("portfolioTypes[2]"/*個人形象網站*/),
+                    info: this.$t("portfolios[14].info"/*Island Travel*/),
+                    tools: [ require("../../assets/image/icons/icon_html5.png"), require("../../assets/image/icons/icon_css3.png"), require("../../assets/image/icons/icon_js.png") ],
+                    pages: [
+                        {
+                            name: this.$t("portfolios[14].pages[0]"/*首頁*/),
+                            image: require("../../assets/image/portfolios/island_1.png"),
+                            video: require("../../assets/video/island_1.mp4")
+                        },
+                        {
+                            name: this.$t("portfolios[14].pages[1]"/*海島景點*/),
+                            image: require("../../assets/image/portfolios/island_2.png"),
+                            video: require("../../assets/video/island_2.mp4")
+                        },
+                        {
+                            name: this.$t("portfolios[14].pages[2]"/*吃喝玩樂*/),
+                            image: require("../../assets/image/portfolios/island_3.png"),
+                            video: require("../../assets/video/island_3.mp4")
+                        },
+                        {
+                            name: this.$t("portfolios[14].pages[3]"/*住宿一覽*/),
+                            image: require("../../assets/image/portfolios/island_4.png"),
+                            video: require("../../assets/video/island_4.mp4")
+                        }
+                    ]
                 }
             ]
         }

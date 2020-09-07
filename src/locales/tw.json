@@ -90,6 +90,16 @@
       "name": "樂悠遊",
       "info": "深圳樂悠遊企業官方網站，使用Vue-cli2開發",
       "pages": [ "首頁", "招聘" ]
+    },
+    {
+      "name": "Stellar",
+      "info": "資策會團體專題開發，使用HTML5+Css3+JavaScript+PHP+jQuery開發",
+      "pages": [ "首頁", "觀星知識" ]
+    },
+    {
+      "name": "Island Travel",
+      "info": "資策會個人專題開發，使用HTML5+Css3+JavaScript+jQuery開發",
+      "pages": [ "首頁", "海島景點", "吃喝玩樂", "住宿一覽" ]
     }
   ],
   "jobs": [
